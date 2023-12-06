@@ -18,24 +18,26 @@ body:not(nav) {
 body{
     font-family: "Black ops one";
     background-color: var(--second-background);
+    text-align: center;
 
 }
-.home{
+#home{
     display: grid;
     max-width: 650px;
     grid-template-rows: 1fr, 1fr;
     
 }
-.home-nav-bar > nav {
+div.home-nav-bar {
     font-size: 1.2 rem;
     background-color: var(--first-background);
     color: var(--text-color-2);
 }
 nav a {
     text-decoration: none;
-    color: var(--text-color-2);
+    
 }
-nav ul{
+nav ul {
+text-decoration: none;
 list-style: none;
 display: flex;
 justify-content: center;
@@ -45,15 +47,11 @@ nav li{
     margin-left: 60px;
 }
 
-nav a.social-media-bar  {
+div.social-media-bar {
     border-width: 20px;
     border-style: solid;
     border-color: var(--second-background);
-    color: var(--text-color-1);
-}
-img :hover {
-    color: #f8f9fa;
-    text-decoration: underline;
+    color: black;
 }
 
 h1{
@@ -73,25 +71,29 @@ h1{
     background-color: var(--first-background);    
 }
 
- img{
+figure.home-image{
     width: min(100%, 450px);
-    height: 200px;
-    
+    height: max(100%, 200px);
+    justify-content: center;
 }
 
-.home-page-paragraph{
-
-        float: right;
-        width: 75%;
-    
+.home-page-paragraph > section{
+        display: column;
+        width: 400px;
+        justify-content: right;
+        padding-bottom: 40px;
 }
 .home-page-paragraph > h2{
     font-size: 45px;
+    display:inline;
 }
-
+p.sources{
+    padding: 20px;
+    justify-content:flex-end;
+}
 .footer{
     text-align: center;
-    position:static;
+    position: static;
     bottom: 0;
     width: 100%;
     height: 2.5rem;
