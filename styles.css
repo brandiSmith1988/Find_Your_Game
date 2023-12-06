@@ -51,7 +51,10 @@ nav a.social-media-bar  {
     border-color: var(--second-background);
     color: var(--text-color-1);
 }
-
+img :hover {
+    color: #f8f9fa;
+    text-decoration: underline;
+}
 
 h1{
     font-weight: 40;
